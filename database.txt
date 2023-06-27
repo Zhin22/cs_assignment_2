@@ -1,0 +1,15 @@
+-- Create the database
+CREATE DATABASE shopping_list_database;
+
+-- Switch to the newly created database
+USE shopping_list_database;
+
+-- Create the table for the shopping list
+CREATE TABLE shopping_list (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  item_name VARCHAR(100) NOT NULL,
+  quantity INT,
+  unit VARCHAR(20),
+  notes VARCHAR(200),
+  is_purchased BOOLEAN DEFAULT 0
+);
